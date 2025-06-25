@@ -4,7 +4,7 @@ deployment:
     - source /home/vibecekf/nodevenv/repositories/vibemotion/22/bin/activate && cd /home/vibecekf/repositories/vibemotion
 
     - echo "Installing dependencies..."
-    - npm install
+    - npm install --include=dev
 
     - echo "Building React app..."
     - npm run build
