@@ -4,13 +4,13 @@ import CaseStudyCard from "../UI/CaseStudyCard";
 const CaseStudiesSection: React.FC = () => {
   const caseStudies = [
     {
-      image: "/src/assets/images/case-1.jpg",
+      image: "/images/case-1.jpg",
       title: "Sit amet consectetur adipisicing elit",
       description:
         "Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
     },
     {
-      image: "/src/assets/images/case-2.jpg",
+      image: "/images/case-2.jpg",
       title: "Excepturi placeat nihil eos maxime",
       description:
         "Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",

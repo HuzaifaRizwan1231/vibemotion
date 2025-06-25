@@ -21,7 +21,7 @@ const HeroSlider: React.FC = () => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/src/assets/images/slider-img.png" alt="" />
+                    <img src="/images/slider-img.png" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -47,7 +47,7 @@ const HeroSlider: React.FC = () => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/src/assets/images/slider-img.png" alt="" />
+                    <img src="/images/slider-img.png" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -73,7 +73,7 @@ const HeroSlider: React.FC = () => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/src/assets/images/slider-img.png" alt="" />
+                    <img src="/images/slider-img.png" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">

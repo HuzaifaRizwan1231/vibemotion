@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="col-md-6">
             <div className="img-box">
-              <img src="/src/assets/images/about-img.png" alt="" />
+              <img src="/images/about-img.png" alt="" />
             </div>
           </div>
         </div>

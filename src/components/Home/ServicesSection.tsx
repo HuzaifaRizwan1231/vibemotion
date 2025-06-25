@@ -4,22 +4,22 @@ import ServiceCard from "../UI/ServiceCard";
 const ServicesSection: React.FC = () => {
   const services = [
     {
-      image: "/src/assets/images/s1.png",
+      image: "/images/s1.png",
       title: "Link Building",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     },
     {
-      image: "/src/assets/images/s2.png",
+      image: "/images/s2.png",
       title: "On page SEO",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     },
     {
-      image: "/src/assets/images/s3.png",
+      image: "/images/s3.png",
       title: "Online Marketing",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     },
     {
-      image: "/src/assets/images/s4.png",
+      image: "/images/s4.png",
       title: "Email Marketing",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     },

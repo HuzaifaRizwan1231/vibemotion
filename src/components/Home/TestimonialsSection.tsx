@@ -27,7 +27,7 @@ const TestimonialsSection: React.FC = () => {
                 <div className="col-md-10 mx-auto">
                   <div className="box">
                     <div className="img-box">
-                      <img src="/src/assets/images/client.jpg" alt="" />
+                      <img src="/images/client.jpg" alt="" />
                     </div>
                     <div className="detail-box">
                       <div className="client_info">
@@ -58,7 +58,7 @@ const TestimonialsSection: React.FC = () => {
                 <div className="col-md-10 mx-auto">
                   <div className="box">
                     <div className="img-box">
-                      <img src="/src/assets/images/client.jpg" alt="" />
+                      <img src="/images/client.jpg" alt="" />
                     </div>
                     <div className="detail-box">
                       <div className="client_info">
@@ -89,7 +89,7 @@ const TestimonialsSection: React.FC = () => {
                 <div className="col-md-10 mx-auto">
                   <div className="box">
                     <div className="img-box">
-                      <img src="/src/assets/images/client.jpg" alt="" />
+                      <img src="/images/client.jpg" alt="" />
                     </div>
                     <div className="detail-box">
                       <div className="client_info">
