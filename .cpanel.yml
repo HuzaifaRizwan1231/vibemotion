@@ -1,7 +1,7 @@
 deployment:
   tasks:
     - echo "Activating Node.js environment..."
-    - source /home/vibecekf/nodevenv/repositories/vibemotion/20/bin/activate && cd /home/vibecekf/repositories/vibemotion
+    - source /home/vibecekf/nodevenv/repositories/vibemotion/22/bin/activate && cd /home/vibecekf/repositories/vibemotion
 
     - echo "Installing dependencies..."
     - npm install
@@ -12,6 +12,6 @@ deployment:
     - echo "Deploying to public_html..."
     - export DEPLOYPATH=/home/vibecekf/public_html
     - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -r build/* $DEPLOYPATH
+    - /bin/cp -r dist/* $DEPLOYPATH
 
     - echo "✅ Deployment complete."
