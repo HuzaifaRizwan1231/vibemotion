@@ -5,7 +5,7 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       image: "/src/assets/images/s1.png",
-      title: "Link Building",
+      title: "Test Building",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     },
     {
