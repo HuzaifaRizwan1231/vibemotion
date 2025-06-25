@@ -1,4 +1,15 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/vibecekf/public_html
-    - /bin/cp -r * $DEPLOYPATH
+    - echo "👉 Installing Node dependencies..."
+    - /opt/cpanel/ea-nodejs18/bin/npm install
+    - echo "✅ Dependencies installed."
+
+    - echo "🚀 Building React app..."
+    - /opt/cpanel/ea-nodejs18/bin/npm run build
+    - echo "✅ Build completed."
+
+    - echo "📂 Deploying to public_html..."
+    - export DEPLOYPATH=/home/$USER/public_html
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -r dist/* $DEPLOYPATH
+    - echo "✅ Deployment finished."
