@@ -18,7 +18,7 @@ const HeroSlider: React.FC = () => {
       image: "/images/slider-img.png",
       title: "💡 Digital Solutions Experts",
       subTitle:
-        "Vibemotion delivers tailored software consultancy, creative development, and e-commerce solutions to help your business thrive in the digital space.",
+        "Vibe Motion delivers tailored software consultancy, creative development, and e-commerce solutions to help your business thrive in the digital space.",
     },
     {
       image: "/images/slider-img-2.png",
@@ -64,13 +64,13 @@ const HeroSlider: React.FC = () => {
           ))}
         </div>
         <ol className="carousel-indicators">
-          <li
-            data-target="#customCarousel1"
-            data-slide-to="0"
-            className="active"
-          ></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          {carouselItems.map((_, index) => (
+            <li
+              data-target="#customCarousel1"
+              data-slide-to={index}
+              className={`${index == 0 && `active`}`}
+            ></li>
+          ))}
         </ol>
       </div>
     </section>

@@ -8,14 +8,14 @@ const AboutSection: React.FC = () => {
           <div className="col-md-6">
             <div className="detail-box">
               <div className="heading_container">
-                <h2>About Vibemotion</h2>
+                <h2>About Vibe Motion</h2>
               </div>
               <p>
-                Vibemotion is a Manchester-based digital solutions agency
-                offering tailored software consultancy, creative development,
-                project management, and e-commerce services to businesses of all
-                sizes. Our goal is to deliver smart, scalable solutions that
-                empower clients to thrive in the digital space.
+                Vibe Motion is a UK-based digital solutions agency offering
+                tailored software consultancy, creative development, project
+                management, and e-commerce services to businesses of all sizes.
+                Our goal is to deliver smart, scalable solutions that empower
+                clients to thrive in the digital space.
               </p>
               <p>
                 With years of experience in the digital industry, our team

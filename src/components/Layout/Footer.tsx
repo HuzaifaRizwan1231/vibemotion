@@ -20,12 +20,11 @@ const Footer: React.FC = () => {
           <div className="row">
             <div className="col-md-6 col-lg-4">
               <div className="info_detail">
-                <h4>Vibemotion</h4>
+                <h4>Vibe Motion</h4>
                 <p>
-                  Manchester-based digital solutions agency offering tailored
-                  software consultancy, creative development, project
-                  management, and e-commerce services to businesses of all
-                  sizes.
+                  UK-based digital solutions agency offering tailored software
+                  consultancy, creative development, project management, and
+                  e-commerce services to businesses of all sizes.
                 </p>
               </div>
             </div>
@@ -54,7 +53,7 @@ const Footer: React.FC = () => {
                 <div className="contact_link_box">
                   <a href="#">
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Manchester, UK</span>
+                    <span>Manchester, United Kingdom</span>
                   </a>
                   <a href="mailto:vibemotionuk@gmail.com">
                     <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -85,7 +84,7 @@ const Footer: React.FC = () => {
         <div className="container">
           <p>
             &copy; <span id="displayYear"></span> All Rights Reserved By
-            <Link to="#"> Vibemotion</Link>
+            <Link to="#"> Vibe Motion</Link>
           </p>
         </div>
       </footer>

@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
               <Link className="navbar-brand" to="/">
-                <span>Vibemotion</span>
+                <span>Vibe Motion</span>
               </Link>
 
               <button

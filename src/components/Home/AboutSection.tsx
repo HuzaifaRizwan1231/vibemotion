@@ -11,11 +11,11 @@ const AboutSection: React.FC = () => {
                 <h2>About Us</h2>
               </div>
               <p>
-                Vibemotion is a Manchester-based digital solutions agency
-                offering tailored software consultancy, creative development,
-                project management, and e-commerce services to businesses of all
-                sizes. Our goal is to deliver smart, scalable solutions that
-                empower clients to thrive in the digital space.
+                Vibe Motion is a UK-based digital solutions agency offering
+                tailored software consultancy, creative development, project
+                management, and e-commerce services to businesses of all sizes.
+                Our goal is to deliver smart, scalable solutions that empower
+                clients to thrive in the digital space.
               </p>
               <a href="/about">Read More</a>
             </div>
