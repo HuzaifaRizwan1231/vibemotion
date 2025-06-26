@@ -1,14 +1,18 @@
-import type React from "react"
+import type React from "react";
 
 interface ServiceCardProps {
-  image: string
-  title: string
-  description: string
+  image: string;
+  title: string;
+  description: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  image,
+  title,
+  description,
+}) => {
   return (
-    <div className="box">
+    <div className="box h-100">
       <div className="img-box">
         <img src={image || "/placeholder.svg"} alt={title} />
       </div>
@@ -21,7 +25,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description }) 
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;

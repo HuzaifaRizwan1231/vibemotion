@@ -1,16 +1,14 @@
 import type React from "react";
-import ServicesSection from "../components/Home/ServicesSection";
 import AboutSection from "../components/Home/AboutSection";
-import CaseStudiesSection from "../components/Home/CaseStudiesSection";
 import TestimonialsSection from "../components/Home/TestimonialsSection";
-import ContactSection from "../components/Home/ContactSection";
+import ServicesSection from "../components/Services/ServicesSection";
+import ContactSection from "../components/Contact/ContactSection";
 
 const Home: React.FC = () => {
   return (
     <>
       <ServicesSection />
       <AboutSection />
-      <CaseStudiesSection />
       <TestimonialsSection />
       <ContactSection />
     </>

@@ -8,17 +8,23 @@ const AboutSection: React.FC = () => {
           <div className="col-md-6">
             <div className="detail-box">
               <div className="heading_container">
-                <h2>About Us</h2>
+                <h2>About Vibemotion</h2>
               </div>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All
+                Vibemotion is a Manchester-based digital solutions agency
+                offering tailored software consultancy, creative development,
+                project management, and e-commerce services to businesses of all
+                sizes. Our goal is to deliver smart, scalable solutions that
+                empower clients to thrive in the digital space.
               </p>
-              <a href="#">Read More</a>
+              <p>
+                With years of experience in the digital industry, our team
+                combines technical expertise with creative innovation to help
+                businesses transform their operations and achieve their goals.
+                We pride ourselves on delivering high-quality solutions that
+                drive real business value.
+              </p>
+              <a href="/contact">Get In Touch</a>
             </div>
           </div>
           <div className="col-md-6">

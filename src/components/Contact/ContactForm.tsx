@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState } from "react"
+import type React from "react";
+import { useState } from "react";
 
 interface FormData {
-  fullName: string
-  email: string
-  phone: string
-  message: string
+  fullName: string;
+  email: string;
+  phone: string;
+  message: string;
 }
 
 const ContactForm: React.FC = () => {
@@ -16,26 +16,26 @@ const ContactForm: React.FC = () => {
     email: "",
     phone: "",
     message: "",
-  })
+  });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
   return (
     <div className="form_container">
       <div className="heading_container">
-        <h2>Request A Call back</h2>
+        <h2>Send us a Message</h2>
       </div>
       <form onSubmit={handleSubmit}>
         <div>
@@ -48,10 +48,22 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div>
-          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
         </div>
         <div>
-          <input type="text" name="phone" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone number"
+            value={formData.phone}
+            onChange={handleChange}
+          />
         </div>
         <div>
           <input
@@ -68,7 +80,7 @@ const ContactForm: React.FC = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

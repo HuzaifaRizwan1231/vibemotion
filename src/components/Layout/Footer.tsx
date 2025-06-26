@@ -1,33 +1,35 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useEffect } from "react"
-import { Link } from "react-router-dom"
+import type React from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   useEffect(() => {
     // Set current year
-    const yearElement = document.getElementById("displayYear")
+    const yearElement = document.getElementById("displayYear");
     if (yearElement) {
-      yearElement.textContent = new Date().getFullYear().toString()
+      yearElement.textContent = new Date().getFullYear().toString();
     }
-  }, [])
+  }, []);
 
   return (
     <div className="footer_container">
       <section className="info_section">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-4">
               <div className="info_detail">
-                <h4>Digian</h4>
+                <h4>Vibemotion</h4>
                 <p>
-                  Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
-                  Latin words, combined with a handful
+                  Manchester-based digital solutions agency offering tailored
+                  software consultancy, creative development, project
+                  management, and e-commerce services to businesses of all
+                  sizes.
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2 mx-auto">
+            <div className="col-md-6 col-lg-3 mx-auto">
               <div className="info_link_box">
                 <h4>Links</h4>
                 <div className="info_links">
@@ -46,28 +48,17 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <h4>Subscribe</h4>
-              <form action="#">
-                <input type="text" placeholder="Enter email" />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-0 ml-auto">
+            <div className="col-md-6 col-lg-4 mb-0 ml-auto">
               <div className="info_contact">
-                <h4>Address</h4>
+                <h4>Contact Info</h4>
                 <div className="contact_link_box">
                   <a href="#">
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Location</span>
+                    <span>Manchester, UK</span>
                   </a>
-                  <a href="#">
-                    <i className="fa fa-phone" aria-hidden="true"></i>
-                    <span>Call +01 1234567890</span>
-                  </a>
-                  <a href="#">
+                  <a href="mailto:vibemotionuk@gmail.com">
                     <i className="fa fa-envelope" aria-hidden="true"></i>
-                    <span>demo@gmail.com</span>
+                    <span>vibemotionuk@gmail.com</span>
                   </a>
                 </div>
               </div>
@@ -94,12 +85,12 @@ const Footer: React.FC = () => {
         <div className="container">
           <p>
             &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/"> Free Html Templates</a>
+            <Link to="#"> Vibemotion</Link>
           </p>
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
