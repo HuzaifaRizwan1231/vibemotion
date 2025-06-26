@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
               <Link className="navbar-brand" to="/">
-                <span>Digian</span>
+                <span>Vibemotion</span>
               </Link>
 
               <button
@@ -71,9 +71,9 @@ const Header: React.FC = () => {
                   </li>
                 </ul>
                 <div className="quote_btn-container">
-                  <a href="#" className="quote_btn">
-                    Get A Quote
-                  </a>
+                  <Link to="/contact" className="quote_btn">
+                    Contact Us
+                  </Link>
                 </div>
               </div>
             </nav>

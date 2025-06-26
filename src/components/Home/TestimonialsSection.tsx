@@ -13,10 +13,10 @@ const TestimonialsSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="client_section">
+    <section className="client_section layout_padding">
       <div className="container">
         <div className="heading_container heading_center">
-          <h2>Testimonial</h2>
+          <h2>Testimonials</h2>
         </div>
       </div>
       <div id="customCarousel2" className="carousel slide" data-ride="carousel">
@@ -32,19 +32,16 @@ const TestimonialsSection: React.FC = () => {
                     <div className="detail-box">
                       <div className="client_info">
                         <div className="client_name">
-                          <h5>Morojink</h5>
-                          <h6>Customer</h6>
+                          <h5>Sarah Johnson</h5>
+                          <h6>Tech Startup CEO</h6>
                         </div>
                         <i className="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugia
+                        Vibemotion transformed our digital presence with their
+                        expert consultancy and creative development. Their
+                        project management approach kept everything on track and
+                        delivered exceptional results.
                       </p>
                     </div>
                   </div>
@@ -63,50 +60,15 @@ const TestimonialsSection: React.FC = () => {
                     <div className="detail-box">
                       <div className="client_info">
                         <div className="client_name">
-                          <h5>Morojink</h5>
-                          <h6>Customer</h6>
+                          <h5>Michael Chen</h5>
+                          <h6>E-commerce Director</h6>
                         </div>
                         <i className="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugia
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-10 mx-auto">
-                  <div className="box">
-                    <div className="img-box">
-                      <img src="/images/client.jpg" alt="" />
-                    </div>
-                    <div className="detail-box">
-                      <div className="client_info">
-                        <div className="client_name">
-                          <h5>Morojink</h5>
-                          <h6>Customer</h6>
-                        </div>
-                        <i className="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugia
+                        The e-commerce solution Vibemotion built for us exceeded
+                        expectations. Their technical expertise and attention to
+                        detail made the entire process smooth and successful.
                       </p>
                     </div>
                   </div>
@@ -122,7 +84,6 @@ const TestimonialsSection: React.FC = () => {
             className="active"
           ></li>
           <li data-target="#customCarousel2" data-slide-to="1"></li>
-          <li data-target="#customCarousel2" data-slide-to="2"></li>
         </ol>
       </div>
     </section>

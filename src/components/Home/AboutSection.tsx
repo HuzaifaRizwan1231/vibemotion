@@ -11,14 +11,13 @@ const AboutSection: React.FC = () => {
                 <h2>About Us</h2>
               </div>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All
+                Vibemotion is a Manchester-based digital solutions agency
+                offering tailored software consultancy, creative development,
+                project management, and e-commerce services to businesses of all
+                sizes. Our goal is to deliver smart, scalable solutions that
+                empower clients to thrive in the digital space.
               </p>
-              <a href="#">Read More</a>
+              <a href="/about">Read More</a>
             </div>
           </div>
           <div className="col-md-6">
