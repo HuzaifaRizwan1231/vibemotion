@@ -2,6 +2,7 @@ import type React from "react";
 import ServiceCard from "../UI/ServiceCard";
 import { serviceSection } from "../../data/services";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ServicesSection: React.FC = () => {
   const [visibleServices, setVisibleServices] = useState(4);
@@ -22,7 +23,9 @@ const ServicesSection: React.FC = () => {
                 className="col-md-6 col-lg-3"
                 style={{ margin: "15px 0" }}
               >
-                <ServiceCard {...service} />
+                <Link to={`/service/${service.slug}`} className="service-link">
+                  <ServiceCard {...service} />
+                </Link>
               </div>
             ))}
         </div>
@@ -40,6 +43,19 @@ const ServicesSection: React.FC = () => {
             </div>
           )}
       </div>
+
+      <style>{`
+        .service-link {
+          text-decoration: none;
+          color: inherit;
+          display: block;
+        }
+
+        .service-link:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+      `}</style>
     </section>
   );
 };

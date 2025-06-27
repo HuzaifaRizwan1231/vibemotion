@@ -37,7 +37,10 @@ const TestimonialsSection: React.FC = () => {
       <div id="customCarousel2" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           {testimonials.map((item, index) => (
-            <div className={`carousel-item ${index == 0 && "active"}`}>
+            <div
+              key={index}
+              className={`carousel-item ${index == 0 && "active"}`}
+            >
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 mx-auto">
@@ -68,6 +71,7 @@ const TestimonialsSection: React.FC = () => {
         <ol className="carousel-indicators">
           {testimonials.map((_, index) => (
             <li
+              key={index}
               data-target="#customCarousel2"
               data-slide-to={index}
               className={`${index == 0 && `active`}`}

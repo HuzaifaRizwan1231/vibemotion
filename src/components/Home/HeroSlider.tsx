@@ -39,7 +39,10 @@ const HeroSlider: React.FC = () => {
       <div id="customCarousel1" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           {carouselItems.map((item, index) => (
-            <div className={`carousel-item ${index == 0 && "active"}`}>
+            <div
+              key={index}
+              className={`carousel-item ${index == 0 && "active"}`}
+            >
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
@@ -66,6 +69,7 @@ const HeroSlider: React.FC = () => {
         <ol className="carousel-indicators">
           {carouselItems.map((_, index) => (
             <li
+              key={index}
               data-target="#customCarousel1"
               data-slide-to={index}
               className={`${index == 0 && `active`}`}

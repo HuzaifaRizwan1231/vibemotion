@@ -19,10 +19,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="detail-box">
         <h5>{title}</h5>
         <p>{description}</p>
-        <a href="#">
+        <div>
           <span>Read More</span>
           <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-        </a>
+        </div>
       </div>
     </div>
   );
