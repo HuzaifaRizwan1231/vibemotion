@@ -20,7 +20,20 @@ const Footer: React.FC = () => {
           <div className="row">
             <div className="col-md-6 col-lg-4">
               <div className="info_detail">
-                <h4>Vibe Motion</h4>
+                <h4>
+                  {" "}
+                  <img
+                    className="footer_logo"
+                    src={"/logo/logo.png"}
+                    alt="Vibemotion Logo"
+                    style={{
+                      height: "60px",
+                      width: "auto",
+                      objectFit: "contain",
+                      display: "block",
+                    }}
+                  />
+                </h4>
                 <p>
                   UK-based digital solutions agency offering tailored software
                   consultancy, creative development, project management, and
@@ -88,6 +101,17 @@ const Footer: React.FC = () => {
           </p>
         </div>
       </footer>
+
+      <style>{`
+
+
+        @media (max-width: 768px) {
+          .footer_logo {
+            margin: auto;
+          }
+
+        }
+      `}</style>
     </div>
   );
 };

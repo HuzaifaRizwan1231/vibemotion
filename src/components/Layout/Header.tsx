@@ -13,7 +13,18 @@ const Header: React.FC = () => {
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
               <Link className="navbar-brand" to="/">
-                <span>Vibe Motion</span>
+                <span>
+                  <img
+                    src={"/logo/logo.png"}
+                    alt="Vibemotion Logo"
+                    style={{
+                      height: "60px",
+                      width: "auto",
+                      objectFit: "contain",
+                      display: "block",
+                    }}
+                  />
+                </span>
               </Link>
 
               <button
