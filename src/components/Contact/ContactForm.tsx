@@ -2,6 +2,9 @@
 
 import type React from "react";
 import { useState } from "react";
+import api from "../../axios/axios.config";
+import type { ApiResponse } from "../../types";
+import toast from "react-hot-toast";
 
 interface FormData {
   fullName: string;
@@ -17,6 +20,7 @@ const ContactForm: React.FC = () => {
     phone: "",
     message: "",
   });
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -26,10 +30,28 @@ const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
+
+    // handle checks here
+
     // Handle form submission here
-    console.log("Form submitted:", formData);
+    const response: ApiResponse = await api.post("/contact", formData);
+
+    if (response.data.success) {
+      toast.success("Form Submitted Successfully");
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } else {
+      toast.error(response.data.message);
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -45,6 +67,7 @@ const ContactForm: React.FC = () => {
             placeholder="Full Name"
             value={formData.fullName}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -54,6 +77,7 @@ const ContactForm: React.FC = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -63,6 +87,7 @@ const ContactForm: React.FC = () => {
             placeholder="Phone number"
             value={formData.phone}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -73,6 +98,7 @@ const ContactForm: React.FC = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="d-flex">

@@ -15,11 +15,13 @@ import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import ServiceDetail from "./pages/ServiceDetail";
 import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Toaster position="top-right" />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

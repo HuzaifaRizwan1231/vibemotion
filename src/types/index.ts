@@ -65,3 +65,9 @@ export interface ContactFormData {
   phone: string;
   message: string;
 }
+
+export interface ApiResponse {
+  success: Boolean;
+  data: any;
+  message: string;
+}
