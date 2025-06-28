@@ -1,4 +1,5 @@
 import type React from "react";
+import { Link } from "react-router-dom";
 
 const AboutSection: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const AboutSection: React.FC = () => {
                 We pride ourselves on delivering high-quality solutions that
                 drive real business value.
               </p>
-              <a href="/contact">Get In Touch</a>
+              <Link to="/contact">Get In Touch</Link>
             </div>
           </div>
           <div className="col-md-6">

@@ -3,6 +3,7 @@
 import type React from "react";
 import { useState } from "react";
 import type { FAQ } from "../../types";
+import { Link } from "react-router-dom";
 
 interface FAQSectionProps {
   faqs: FAQ[];
@@ -54,10 +55,10 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
               Our team is here to help you find the perfect solution for your
               needs.
             </p>
-            <a href="/contact" className="cta_btn">
+            <Link to="/contact" className="cta_btn">
               <i className="fa fa-envelope"></i>
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import type React from "react";
 import type { PricingTier } from "../../types";
+import { Link } from "react-router-dom";
 
 interface PricingSectionProps {
   pricing: PricingTier[];
@@ -60,9 +61,9 @@ const PricingSection: React.FC<PricingSectionProps> = ({ pricing }) => {
                 </div>
 
                 <div className="pricing_footer">
-                  <a href="/contact" className="pricing_btn">
+                  <Link to="/contact" className="pricing_btn">
                     Get Started
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
