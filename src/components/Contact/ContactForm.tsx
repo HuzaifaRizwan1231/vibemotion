@@ -102,7 +102,20 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className="d-flex">
-          <button type="submit">SEND</button>
+          <button
+            disabled={loading}
+            type="submit"
+            className={`d-flex align-items-center ${loading && ""}`}
+          >
+            {loading && (
+              <span
+                className="spinner-border spinner-border-sm mr-1"
+                role="status"
+                aria-hidden="true"
+              ></span>
+            )}
+            SEND
+          </button>
         </div>
       </form>
     </div>

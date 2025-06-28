@@ -29,7 +29,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ pricing }) => {
 
                 <div className="pricing_header">
                   <h3>{tier.name}</h3>
-                  <div className="price">
+                  {/* <div className="price">
                     <span className="currency">£</span>
                     <span className="amount">
                       {tier.price
@@ -46,7 +46,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ pricing }) => {
                     {tier.price.includes("Custom") && (
                       <span className="custom">Custom Quote</span>
                     )}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="pricing_features">

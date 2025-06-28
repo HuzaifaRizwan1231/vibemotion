@@ -181,7 +181,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ service }) => {
           z-index: 2;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           .features_content, .benefits_content {
             margin-bottom: 40px;
           }

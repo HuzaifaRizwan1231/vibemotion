@@ -71,10 +71,10 @@ const ServiceNavigation: React.FC<ServiceNavigationProps> = ({ service }) => {
                 <i className="fa fa-envelope"></i>
                 Get a Quote
               </Link>
-              <a href="tel:+44" className="cta_btn secondary">
+              {/* <a href="tel:+44" className="cta_btn secondary">
                 <i className="fa fa-phone"></i>
                 Call Us
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
