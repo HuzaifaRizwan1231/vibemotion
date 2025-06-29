@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
         <div className="container">
           <p>
             &copy; <span id="displayYear"></span> All Rights Reserved By
-            <Link to="#"> Vibe Motion</Link>
+            <Link to="#"> Vibe Motion Ltd</Link>
           </p>
         </div>
       </footer>
