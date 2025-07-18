@@ -23,7 +23,10 @@ const ServicesSection: React.FC = () => {
                 className="col-md-6 col-lg-3"
                 style={{ margin: "15px 0" }}
               >
-                <Link to={`/service/${service.slug}`} className="service-link">
+                <Link
+                  to={`/service/${service.slug}`}
+                  className="service-link h-100"
+                >
                   <ServiceCard {...service} />
                 </Link>
               </div>

@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                     src={"/logo/logo.png"}
                     alt="Vibemotion Logo"
                     style={{
-                      height: "60px",
+                      height: "80px",
                       width: "auto",
                       objectFit: "contain",
                       display: "block",

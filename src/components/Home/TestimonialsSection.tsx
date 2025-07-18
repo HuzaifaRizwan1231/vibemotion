@@ -23,7 +23,7 @@ const TestimonialsSection: React.FC = () => {
       clientName: "David Lee",
       remark:
         "The e-commerce solution Vibe Motion built for us exceeded expectations. Their technical expertise and attention to detail made the entire process smooth and successful.",
-      image: "/images/client.jpg",
+      image: "/images/client.png",
     },
   ];
 
@@ -45,8 +45,12 @@ const TestimonialsSection: React.FC = () => {
                 <div className="row">
                   <div className="col-md-10 mx-auto">
                     <div className="box">
-                      <div className="img-box">
-                        <img src={item.image} alt="" />
+                      <div className="img-box bg-white rounded-circle">
+                        <img
+                          src={item.image}
+                          className="object-fit-contain"
+                          alt=""
+                        />
                       </div>
                       <div className="detail-box">
                         <div className="client_info">
