@@ -137,136 +137,152 @@ export const serviceSection = {
     },
     {
       image: "/images/s2.png",
-      title: "Creative Development",
+      title: "Game Development",
+      subtitle: "Immersive game experiences that bring ideas to life",
       description:
-        "Innovative web and mobile applications designed with user experience and performance in mind.",
-      slug: "creative-development",
-      subtitle: "Innovative solutions that bring your ideas to life",
-      icon: "fa-paint-brush",
+        "End-to-end game development services focused on immersive gameplay, performance, and engaging player experiences across mobile, PC, and web platforms.",
+
+      slug: "game-development",
+      icon: "fa-gamepad",
+
       overview:
-        "Our creative development services combine cutting-edge technology with innovative design to create exceptional web and mobile applications. We focus on user experience, performance, and scalability to deliver solutions that truly make an impact.",
+        "Our game development services combine creative storytelling, advanced game mechanics, and cutting-edge technology to build engaging and scalable gaming experiences. From concept to deployment, we craft games that are fun, optimized, and built for long-term player retention. Explore our studio work at MindItGames for real-world examples of our gaming projects.",
+
+      // 🔗 Added external link reference to MindItGames
+      studioLink: {
+        label: "Explore MindItGames",
+        url: "https://vibemotion.co.uk/minditgames/",
+      },
+
       keyFeatures: [
-        "Custom Web Applications",
-        "Mobile App Development",
-        "Progressive Web Apps (PWA)",
-        "UI/UX Design",
-        "Frontend Development",
-        "API Development",
-        "Database Design",
+        "Mobile Game Development (iOS & Android)",
+        "PC & Web-Based Games",
+        "2D & 3D Game Design",
+        "Unity & Unreal Engine Development",
+        "Multiplayer & Online Systems",
+        "Game UI/UX Design",
+        "AI-driven Game Mechanics",
         "Performance Optimization",
       ],
+
       benefits: [
-        "Enhanced user engagement and satisfaction",
-        "Improved brand recognition and loyalty",
-        "Increased conversion rates",
-        "Mobile-first responsive design",
-        "SEO-optimized development",
-        "Future-proof technology stack",
+        "Highly engaging player experiences",
+        "Scalable architecture for multiplayer games",
+        "Cross-platform compatibility",
+        "Optimized performance for mobile and PC",
+        "Strong retention-focused design",
+        "Monetization-ready game systems",
       ],
+
       process: [
         {
           step: 1,
-          title: "Concept & Planning",
+          title: "Concept & Game Design",
           description:
-            "We work with you to understand your vision and create detailed project specifications and wireframes.",
-          icon: "fa-pencil",
+            "We define gameplay mechanics, storylines, and core loop design to shape the game vision.",
+          icon: "fa-lightbulb",
           duration: "1-2 weeks",
         },
         {
           step: 2,
-          title: "Design & Prototyping",
+          title: "Art & Prototype",
           description:
-            "Our designers create stunning visual concepts and interactive prototypes for your approval.",
-          icon: "fa-magic",
-          duration: "2-3 weeks",
+            "We build early prototypes with visual direction, character design, and interactive mockups.",
+          icon: "fa-paint-brush",
+          duration: "2-4 weeks",
         },
         {
           step: 3,
           title: "Development",
           description:
-            "Our developers bring the designs to life using modern technologies and best practices.",
+            "We develop core gameplay systems, physics, AI, and multiplayer functionality using modern engines.",
           icon: "fa-code",
-          duration: "4-12 weeks",
+          duration: "4-16 weeks",
         },
         {
           step: 4,
           title: "Testing & Launch",
           description:
-            "Comprehensive testing ensures quality before we launch your application to the world.",
+            "We rigorously test gameplay, fix bugs, and optimize performance before global release.",
           icon: "fa-rocket",
-          duration: "1-2 weeks",
+          duration: "1-3 weeks",
         },
       ],
+
       pricing: [
         {
-          name: "Landing Page",
-          price: "£1,500",
+          name: "Prototype Game",
+          price: "£2,500",
           features: [
-            "Responsive design",
-            "Contact forms",
-            "SEO optimization",
-            "Basic analytics",
-            "1 month support",
+            "Basic gameplay prototype",
+            "Core mechanics demo",
+            "Simple UI",
+            "Single level build",
+            "2 weeks support",
           ],
         },
         {
-          name: "Web Application",
-          price: "£5,000+",
+          name: "Full Mobile Game",
+          price: "£10,000+",
+          popular: true,
           features: [
-            "Custom functionality",
-            "User authentication",
-            "Database integration",
-            "Admin dashboard",
+            "Complete game development",
+            "iOS & Android support",
+            "In-app purchases",
+            "Ads integration",
+            "Backend services",
             "3 months support",
           ],
-          popular: true,
         },
         {
-          name: "Mobile App",
-          price: "£8,000+",
+          name: "Multiplayer Game",
+          price: "£18,000+",
           features: [
-            "iOS & Android",
-            "Native performance",
-            "Push notifications",
-            "App store submission",
+            "Real-time multiplayer",
+            "Matchmaking system",
+            "Server architecture",
+            "Anti-cheat systems",
             "6 months support",
           ],
         },
       ],
+
       caseStudy: {
-        title: "Healthcare Management Platform",
-        client: "Medical Practice Group",
+        title: "Multiplayer Arcade Battle Game",
+        client: "Indie Game Publisher",
         challenge:
-          "Need for a comprehensive patient management system with appointment scheduling and telemedicine capabilities.",
+          "Build a real-time multiplayer mobile game with smooth gameplay and global matchmaking.",
         solution:
-          "Developed a custom web application with patient portal, appointment system, and integrated video calling.",
+          "Developed a Unity-based multiplayer system with scalable backend and real-time syncing.",
         results: [
-          "80% reduction in administrative time",
-          "95% patient satisfaction rate",
-          "40% increase in appointment efficiency",
-          "Seamless telemedicine integration",
+          "200K+ downloads in first month",
+          "99.2% server uptime",
+          "60% player retention after 7 days",
+          "Cross-platform launch success",
         ],
         image: "/images/case-2.jpg",
       },
+
       faq: [
         {
-          question: "What technologies do you use for development?",
+          question: "What game engines do you use?",
           answer:
-            "We use modern frameworks like React, Vue.js, Node.js, and cloud platforms like AWS and Azure, choosing the best fit for each project.",
+            "We primarily use Unity and Unreal Engine depending on project requirements and performance needs.",
         },
         {
-          question: "Do you provide ongoing maintenance?",
+          question: "Can you build multiplayer games?",
           answer:
-            "Yes, we offer maintenance packages to keep your application updated, secure, and performing optimally.",
+            "Yes, we specialize in real-time multiplayer systems, matchmaking, and scalable backend architecture.",
         },
         {
-          question: "Can you integrate with existing systems?",
+          question: "Do you publish games to app stores?",
           answer:
-            "We specialize in creating solutions that integrate seamlessly with your existing business systems and workflows.",
+            "Yes, we handle full deployment including App Store and Google Play submissions.",
         },
       ],
+
       nextService: "project-management",
-      prevService: "software-consultancy",
+      prevService: "creative-development",
     },
     {
       image: "/images/s3.png",
