@@ -3,15 +3,28 @@ deployment:
     - echo "Activating Node.js environment..."
     - source /home/vibecekf/nodevenv/repositories/vibemotion/22/bin/activate && cd /home/vibecekf/repositories/vibemotion
 
-    - echo "Installing dependencies..."
+    - echo "-------vibemotion.co.uk----------"
+    - echo "Installing dependencies for vibe motion..."
     - npm install --include=dev
 
-    - echo "Building React app..."
+    - echo "Building vibemotion..."
     - npm run build
 
-    - echo "Deploying to public_html..."
+    - echo "Deploying vibemotion to public_html..."
     - export DEPLOYPATH=/home/vibecekf/public_html
     - /bin/rm -rf $DEPLOYPATH/*
     - /bin/cp -r dist/* $DEPLOYPATH
+
+    - echo "-------vibemotion.co.uk/minditgames----------"
+    - cd /home/vibecekf/repositories/vibemotion/minditgames
+    - echo "Installing dependencies for minditgames..."
+    - npm install --include=dev
+
+    - echo "Building minditgames..."
+    - npm run build
+
+    - mkdir -p $DEPLOYPATH/minditgames
+    - echo "Deploying minditgames to public_html..."
+    - /bin/cp -r dist/* $DEPLOYPATH/minditgames
 
     - echo "✅ Deployment complete."
