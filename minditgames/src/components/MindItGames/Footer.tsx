@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Brain, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const SOCIALS = [
@@ -8,7 +8,15 @@ const SOCIALS = [
   { Icon: Youtube, href: "#", label: "YouTube" },
 ];
 
+const NAV_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Games", href: "/#games" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
+];
+
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="border-t border-brand-border bg-brand-ink">
       <div className="mx-auto max-w-6xl px-6 py-14">
@@ -36,21 +44,34 @@ const Footer = () => {
                 Company
               </h4>
               <ul className="mt-4 flex flex-col gap-2.5 text-sm text-slate-400">
-                <li>
-                  <a href="/#about" className="hover:text-white">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="/#games" className="hover:text-white">
-                    Games
-                  </a>
-                </li>
-                <li>
-                  <a href="/#contact" className="hover:text-white">
-                    Contact
-                  </a>
-                </li>
+                {NAV_LINKS.map((link) => (
+                  <li>
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+
+                        navigate(`/${link.href}`);
+
+                        // If home → scroll to top
+                        if (link.href === "/" || link.href === "#") {
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                          return;
+                        }
+
+                        const id = link.href.replace("/#", "");
+
+                        document
+                          .getElementById(id)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="hover:text-white"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -59,7 +80,13 @@ const Footer = () => {
               </h4>
               <ul className="mt-4 flex flex-col gap-2.5 text-sm text-slate-400">
                 <li>
-                  <Link to="/privacy-policy" className="hover:text-white">
+                  <Link
+                    to="/privacy-policy"
+                    onClick={() => {
+                      scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="hover:text-white"
+                  >
                     Privacy Policy
                   </Link>
                 </li>

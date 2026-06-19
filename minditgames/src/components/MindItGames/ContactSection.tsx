@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import type { FormEvent } from 'react'
-import { motion } from 'framer-motion'
-import { Mail, Send, CheckCircle2, MessageCircle } from 'lucide-react'
-import SectionTitle from './SectionTitle.tsx'
+import { useState } from "react";
+import type { FormEvent } from "react";
+import { motion } from "framer-motion";
+import { Mail, Send, CheckCircle2, MessageCircle } from "lucide-react";
+import SectionTitle from "./SectionTitle.tsx";
 
 const ContactSection = () => {
-  const [sent, setSent] = useState(false)
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setSent(true)
-    setTimeout(() => setSent(false), 3000)
-  }
+    e.preventDefault();
+    setSent(true);
+    setTimeout(() => setSent(false), 3000);
+  };
 
   return (
     <section id="contact" className="relative py-20 sm:py-28">
@@ -27,7 +27,7 @@ const ContactSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
+          viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
           className="-mt-4 grid gap-0 overflow-hidden rounded-3xl border border-brand-border bg-brand-surface/70 lg:grid-cols-5"
         >
@@ -43,16 +43,19 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="mailto:contact@minditgames.com"
+              href="mailto:fassijutt@gmail.com"
               className="mt-8 inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-brand-blue-soft transition-colors hover:bg-white/10"
             >
               <Mail size={18} />
-              contact@minditgames.com
+              fassijutt@gmail.com
             </a>
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-8 lg:col-span-3 lg:p-10">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 p-8 lg:col-span-3 lg:p-10"
+          >
             <div className="grid gap-4 sm:grid-cols-2">
               <input
                 type="text"
@@ -93,7 +96,7 @@ const ContactSection = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactSection
+export default ContactSection;

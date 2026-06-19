@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   ChevronRight,
   Database,
@@ -13,16 +13,16 @@ import {
   Info,
   ArrowUp,
   Home as HomeIcon,
-} from 'lucide-react'
-import Navbar from '../components/MindItGames/Navbar.tsx'
-import Footer from '../components/MindItGames/Footer.tsx'
+} from "lucide-react";
+import Navbar from "../components/MindItGames/Navbar.tsx";
+import Footer from "../components/MindItGames/Footer.tsx";
 
-const LAST_UPDATED = 'June 2026'
+const LAST_UPDATED = "June 2026";
 
 const SECTIONS = [
   {
-    id: 'information-collection',
-    title: 'Information We Collect',
+    id: "information-collection",
+    title: "Information We Collect",
     icon: Database,
     content: `We collect limited information to provide and improve our games.
     The types of data we may collect include:
@@ -35,8 +35,8 @@ const SECTIONS = [
     unless you explicitly provide it through a contact form or support request.`,
   },
   {
-    id: 'usage',
-    title: 'How We Use Information',
+    id: "usage",
+    title: "How We Use Information",
     icon: Settings,
     content: `Information collected is used solely for the following purposes:
     - To operate, maintain, and improve our games and services
@@ -49,8 +49,8 @@ const SECTIONS = [
     Data is processed in accordance with applicable data protection regulations.`,
   },
   {
-    id: 'third-party',
-    title: 'Third-Party Services',
+    id: "third-party",
+    title: "Third-Party Services",
     icon: Share2,
     content: `Our games may integrate third-party services to support functionality and monetization.
     These partners have their own privacy policies. Common integrations include:
@@ -63,8 +63,8 @@ const SECTIONS = [
     Their data practices are governed by their own terms and are outside our control.`,
   },
   {
-    id: 'advertising',
-    title: 'Advertising',
+    id: "advertising",
+    title: "Advertising",
     icon: Megaphone,
     content: `Our free games are supported by advertising. We use AdMob and other ad networks to
     display advertisements within our apps. These networks may use your device's advertising ID
@@ -78,7 +78,7 @@ const SECTIONS = [
     Opting out does not remove ads — you'll still see non-personalized advertisements.`,
   },
   {
-    id: 'children',
+    id: "children",
     title: "Children's Privacy",
     icon: Smile,
     content: `Many of our games are designed for a family audience including children.
@@ -92,24 +92,24 @@ const SECTIONS = [
     - We serve only child-appropriate, non-personalized advertisements
     - We do not include social features, external links, or in-app purchases targeting children
 
-    Parents and guardians may contact us at privacy@minditgames.com to request
+    Parents and guardians may contact us at fassijutt@gmail.com to request
     information about data collected or to request deletion of any data.`,
   },
   {
-    id: 'data-retention',
-    title: 'Data Retention & Deletion',
+    id: "data-retention",
+    title: "Data Retention & Deletion",
     icon: Clock,
     content: `We retain aggregated gameplay analytics data for up to 24 months to improve our services.
     Crash and diagnostic data is retained for up to 90 days. Advertising identifiers are handled
     according to our ad partners' own retention policies.
 
-    You may request deletion of your data by contacting us at privacy@minditgames.com.
+    You may request deletion of your data by contacting us at fassijutt@gmail.com.
     Please include your device's advertising ID (if available) to help us locate associated data.
     We will respond to deletion requests within 30 days.`,
   },
   {
-    id: 'security',
-    title: 'Security',
+    id: "security",
+    title: "Security",
     icon: ShieldCheck,
     content: `We implement industry-standard security measures to protect any data we collect, including:
     - Encrypted data transmission (HTTPS/TLS)
@@ -120,40 +120,39 @@ const SECTIONS = [
     We cannot guarantee absolute security but are committed to using best practices to protect your data.`,
   },
   {
-    id: 'contact',
-    title: 'Contact Us',
+    id: "contact",
+    title: "Contact Us",
     icon: Mail,
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or our
     data practices, please contact us:
 
     MindIt Games
-    Email: privacy@minditgames.com
-    Support: contact@minditgames.com
+    Email: fassijutt@gmail.com
 
     We aim to respond to all privacy-related inquiries within 5 business days.`,
   },
-]
+];
 
 const renderContent = (content: string) =>
-  content.split('\n').map((line, i) => {
-    const trimmed = line.trim()
-    if (!trimmed) return null
-    if (trimmed.startsWith('- ')) {
+  content.split("\n").map((line, i) => {
+    const trimmed = line.trim();
+    if (!trimmed) return null;
+    if (trimmed.startsWith("- ")) {
       return (
         <div key={i} className="flex items-start gap-2.5 py-1">
           <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-blue" />
           <span className="text-sm leading-relaxed text-slate-400">
-            {trimmed.replace(/^- /, '')}
+            {trimmed.replace(/^- /, "")}
           </span>
         </div>
-      )
+      );
     }
     return (
       <p key={i} className="mb-2 text-sm leading-relaxed text-slate-400">
         {trimmed}
       </p>
-    )
-  })
+    );
+  });
 
 const PrivacyPolicy = () => {
   return (
@@ -167,7 +166,9 @@ const PrivacyPolicy = () => {
 
         <div className="relative mx-auto max-w-5xl px-6">
           <nav className="mb-6 flex items-center gap-2 text-sm text-slate-500">
-            <Link to="/" className="hover:text-white">Home</Link>
+            <Link to="/" className="hover:text-white">
+              Home
+            </Link>
             <ChevronRight size={14} />
             <span className="text-slate-300">Privacy Policy</span>
           </nav>
@@ -181,10 +182,12 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </motion.h1>
           <p className="mt-4 max-w-xl text-slate-400">
-            At MindIt Games, your privacy matters. Here's exactly how we
-            handle your data — in plain language.
+            At MindIt Games, your privacy matters. Here's exactly how we handle
+            your data — in plain language.
           </p>
-          <p className="mt-4 text-xs text-slate-500">Last updated: {LAST_UPDATED}</p>
+          <p className="mt-4 text-xs text-slate-500">
+            Last updated: {LAST_UPDATED}
+          </p>
         </div>
       </div>
 
@@ -205,7 +208,7 @@ const PrivacyPolicy = () => {
                       className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-xs text-slate-400 transition-colors hover:bg-white/5 hover:text-white"
                     >
                       <span className="font-display text-[10px] font-bold text-brand-blue-soft">
-                        {String(i + 1).padStart(2, '0')}
+                        {String(i + 1).padStart(2, "0")}
                       </span>
                       {s.title}
                     </a>
@@ -218,20 +221,27 @@ const PrivacyPolicy = () => {
           {/* Content */}
           <div>
             <div className="mb-10 flex gap-3 rounded-2xl border-l-2 border-brand-blue bg-brand-surface/50 p-5">
-              <Info size={18} className="mt-0.5 flex-shrink-0 text-brand-blue-soft" />
+              <Info
+                size={18}
+                className="mt-0.5 flex-shrink-0 text-brand-blue-soft"
+              />
               <p className="text-sm leading-relaxed text-slate-400">
                 This Privacy Policy applies to all mobile games, applications,
-                and websites operated by{' '}
+                and websites operated by{" "}
                 <strong className="text-slate-200">MindIt Games</strong>. By
                 using our games, you agree to the terms described below.
               </p>
             </div>
 
             {SECTIONS.map((section, idx) => (
-              <section key={section.id} id={section.id} className="mb-12 scroll-mt-28">
+              <section
+                key={section.id}
+                id={section.id}
+                className="mb-12 scroll-mt-28"
+              >
                 <div className="mb-4 flex items-center gap-3">
                   <span className="font-display text-xs font-extrabold text-gradient-brand">
-                    {String(idx + 1).padStart(2, '0')}
+                    {String(idx + 1).padStart(2, "0")}
                   </span>
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-brand-blue/25 bg-brand-blue/10 text-brand-blue-soft">
                     <section.icon size={18} />
@@ -269,7 +279,7 @@ const PrivacyPolicy = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default PrivacyPolicy
+export default PrivacyPolicy;
