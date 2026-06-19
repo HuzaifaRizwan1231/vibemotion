@@ -1,36 +1,37 @@
-import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Brain, Menu, X } from 'lucide-react'
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Brain, Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'Games', href: '/#games' },
-  { label: 'About', href: '/#about' },
-  { label: 'Contact', href: '/#contact' },
-]
+  { label: "Home", href: "/" },
+  { label: "Games", href: "/#games" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
+];
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
-    setMenuOpen(false)
-  }, [location])
+    setMenuOpen(false);
+  }, [location]);
 
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-brand-border/80 bg-brand-ink/85 backdrop-blur-xl'
-          : 'border-b border-transparent bg-transparent'
+          ? "border-b border-brand-border/80 bg-brand-ink/85 backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
@@ -40,7 +41,7 @@ const Navbar = () => {
             <Brain size={22} className="text-white" strokeWidth={2.25} />
           </span>
           <span className="font-display text-xl font-extrabold tracking-tight text-white">
-            Mind<span className="text-gradient-brand">It</span>{' '}
+            Mind<span className="text-gradient-brand">It</span>{" "}
             <span className="text-slate-300">Games</span>
           </span>
         </Link>
@@ -51,6 +52,23 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+
+                navigate(`/${link.href}`);
+
+                // If home → scroll to top
+                if (link.href === "/" || link.href === "#") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  return;
+                }
+
+                const id = link.href.replace("/#", "");
+
+                document
+                  .getElementById(id)
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-colors duration-200 hover:bg-white/5 hover:text-white"
             >
               {link.label}
@@ -80,9 +98,9 @@ const Navbar = () => {
         {menuOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
             className="overflow-hidden border-b border-brand-border bg-brand-ink/95 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
@@ -106,7 +124,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

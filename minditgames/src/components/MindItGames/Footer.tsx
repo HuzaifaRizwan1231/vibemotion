@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
-import { Brain, Facebook, Instagram, Twitter, Youtube } from 'lucide-react'
+import { Link } from "react-router-dom";
+import { Brain, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const SOCIALS = [
-  { Icon: Facebook, href: '#', label: 'Facebook' },
-  { Icon: Instagram, href: '#', label: 'Instagram' },
-  { Icon: Twitter, href: '#', label: 'X / Twitter' },
-  { Icon: Youtube, href: '#', label: 'YouTube' },
-]
+  { Icon: Facebook, href: "#", label: "Facebook" },
+  { Icon: Instagram, href: "#", label: "Instagram" },
+  { Icon: Twitter, href: "#", label: "X / Twitter" },
+  { Icon: Youtube, href: "#", label: "YouTube" },
+];
 
 const Footer = () => {
   return (
@@ -36,9 +36,21 @@ const Footer = () => {
                 Company
               </h4>
               <ul className="mt-4 flex flex-col gap-2.5 text-sm text-slate-400">
-                <li><a href="/#about" className="hover:text-white">About</a></li>
-                <li><a href="/#games" className="hover:text-white">Games</a></li>
-                <li><a href="/#contact" className="hover:text-white">Contact</a></li>
+                <li>
+                  <a href="/#about" className="hover:text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="/#games" className="hover:text-white">
+                    Games
+                  </a>
+                </li>
+                <li>
+                  <a href="/#contact" className="hover:text-white">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -46,8 +58,11 @@ const Footer = () => {
                 Legal
               </h4>
               <ul className="mt-4 flex flex-col gap-2.5 text-sm text-slate-400">
-                <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
-                <li><a href="/app-ads.txt" className="hover:text-white">app-ads.txt</a></li>
+                <li>
+                  <Link to="/privacy-policy" className="hover:text-white">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -79,7 +94,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/MindItGames/ScrollToTop.tsx";
 import Home from "./pages/Home.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";

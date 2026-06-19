@@ -1,3 +1,0 @@
-# MindIt Games — app-ads.txt
-# Replace placeholder IDs with real publisher IDs before deploying.
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
