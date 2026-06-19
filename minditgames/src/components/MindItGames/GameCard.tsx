@@ -85,7 +85,7 @@ const GameCard = ({ game, reverse = false }: GameCardProps) => {
                   <ChevronLeft size={16} />
                 </button>
 
-                <div className="relative h-28 w-24 sm:h-32 sm:w-28 lg:h-40 lg:w-32 flex-shrink-0 overflow-hidden rounded-xl border border-white/10 bg-black/30 shadow-md">
+                <div className="relative h-16 w-24 sm:h-32 sm:w-28 lg:h-40 lg:w-32 flex-shrink-0 overflow-hidden rounded-xl border border-white/10 bg-black/30 shadow-md">
                   <PlaceholderImage
                     src={game.screenshots[activeShot]?.src}
                     alt={
