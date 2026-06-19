@@ -1,30 +1,29 @@
 deployment:
   tasks:
     - echo "Activating Node.js environment..."
-    - source /home/vibecekf/nodevenv/repositories/vibemotion/22/bin/activate && cd /home/vibecekf/repositories/vibemotion
+    - source /home/vibecekf/nodevenv/repositories/vibemotion/22/bin/activate
 
-    - echo "-------vibemotion.co.uk----------"
-    - echo "Installing dependencies for vibe motion..."
-    - npm install --include=dev
+    - echo "------- vibemotion.co.uk (root app) ----------"
+    - echo "Installing dependencies for vibemotion..."
+    - cd /home/vibecekf/repositories/vibemotion && npm install --include=dev
 
     - echo "Building vibemotion..."
-    - npm run build
+    - cd /home/vibecekf/repositories/vibemotion && npm run build
 
     - echo "Deploying vibemotion to public_html..."
     - export DEPLOYPATH=/home/vibecekf/public_html
     - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -r dist/* $DEPLOYPATH
+    - /bin/cp -r /home/vibecekf/repositories/vibemotion/dist/* $DEPLOYPATH
 
-    - echo "-------vibemotion.co.uk/minditgames----------"
-    - cd /home/vibecekf/repositories/vibemotion/minditgames
+    - echo "------- vibemotion.co.uk/minditgames ----------"
     - echo "Installing dependencies for minditgames..."
-    - npm install --include=dev
+    - cd /home/vibecekf/repositories/vibemotion/minditgames && npm install --include=dev
 
     - echo "Building minditgames..."
-    - npm run build
+    - cd /home/vibecekf/repositories/vibemotion/minditgames && npm run build
 
-    - mkdir -p $DEPLOYPATH/minditgames
-    - echo "Deploying minditgames to public_html..."
-    - /bin/cp -r dist/* $DEPLOYPATH/minditgames
+    - echo "Deploying minditgames..."
+    - mkdir -p /home/vibecekf/public_html/minditgames
+    - /bin/cp -r /home/vibecekf/repositories/vibemotion/minditgames/dist/* /home/vibecekf/public_html/minditgames
 
     - echo "✅ Deployment complete."
