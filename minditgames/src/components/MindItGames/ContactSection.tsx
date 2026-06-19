@@ -29,7 +29,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="-mt-4 grid gap-0 overflow-hidden rounded-3xl border border-brand-border bg-brand-surface/70 lg:grid-cols-5"
+          className="-mt-4 grid gap-0 overflow-hidden rounded-3xl border border-brand-border bg-brand-surface/70 lg:grid-cols-1 w-[75%] mx-auto"
         >
           {/* Side panel */}
           <div className="relative flex flex-col justify-between bg-gradient-to-br from-brand-blue/15 via-brand-violet/10 to-brand-orange/10 p-8 lg:col-span-2 lg:p-10">
@@ -38,7 +38,7 @@ const ContactSection = () => {
                 Reach out directly
               </h3>
               <p className="mt-2 text-sm text-slate-400">
-                Prefer email? We typically respond within 2–3 business days.
+                We typically respond within 2–3 business days.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ const ContactSection = () => {
           </div>
 
           {/* Form */}
-          <form
+          {/* <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 p-8 lg:col-span-3 lg:p-10"
           >
@@ -92,7 +92,7 @@ const ContactSection = () => {
                 </>
               )}
             </button>
-          </form>
+          </form> */}
         </motion.div>
       </div>
     </section>
