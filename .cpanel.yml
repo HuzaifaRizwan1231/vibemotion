@@ -17,7 +17,7 @@ deployment:
 
     - echo "------- vibemotion.co.uk/minditgames ----------"
     - echo "Installing dependencies for minditgames..."
-    - cd /home/vibecekf/repositories/vibemotion/minditgames && npm install --include=dev
+    - cd /home/vibecekf/repositories/vibemotion/minditgames && npm install --include=dev --production=false
 
     - echo "Building minditgames..."
     - cd /home/vibecekf/repositories/vibemotion/minditgames && npm run build
