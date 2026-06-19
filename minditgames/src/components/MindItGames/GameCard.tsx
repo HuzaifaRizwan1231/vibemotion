@@ -74,7 +74,7 @@ const GameCard = ({ game, reverse = false }: GameCardProps) => {
           {/* 🔥 UPDATED SCREENSHOT OVERLAY */}
           {/* ============================= */}
           <div className="absolute inset-x-4 bottom-5 flex items-center gap-3 lg:inset-x-6 lg:bottom-6">
-            <div className="flex-1 overflow-hidden rounded-2xl border border-white/10 bg-black/60 backdrop-blur-md shadow-lg">
+            <div className="flex-1 overflow-hidden rounded-2xl border border-white/10 bg-black/60 backdrop-blur-sm shadow-lg">
               <div className="flex items-center gap-3 p-3">
                 {/* Prev button */}
                 <button
