@@ -26,6 +26,20 @@ const Navbar = () => {
     setMenuOpen(false);
   }, [location]);
 
+  const handleNavLinkClick = (link: string) => {
+    navigate(`/${link}`);
+
+    // If home → scroll to top
+    if (link === "/" || link === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const id = link.replace("/#", "");
+
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -54,20 +68,7 @@ const Navbar = () => {
               href={link.href}
               onClick={(e) => {
                 e.preventDefault();
-
-                navigate(`/${link.href}`);
-
-                // If home → scroll to top
-                if (link.href === "/" || link.href === "#") {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                  return;
-                }
-
-                const id = link.href.replace("/#", "");
-
-                document
-                  .getElementById(id)
-                  ?.scrollIntoView({ behavior: "smooth" });
+                handleNavLinkClick(link.href);
               }}
               className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-colors duration-200 hover:bg-white/5 hover:text-white"
             >
@@ -108,6 +109,10 @@ const Navbar = () => {
                 <a
                   key={link.label}
                   href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavLinkClick(link.href);
+                  }}
                   className="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white"
                 >
                   {link.label}
