@@ -1,20 +1,20 @@
-import { motion } from 'framer-motion'
-import { Gamepad2, Sparkles, Rocket, Star, Puzzle, Brain } from 'lucide-react'
-import PlaceholderImage from './PlaceholderImage.tsx'
+import { motion } from "framer-motion";
+import { Gamepad2, Sparkles, Rocket, Star, Puzzle, Brain } from "lucide-react";
+import PlaceholderImage from "./PlaceholderImage.tsx";
 
 const FLOATERS = [
-  { Icon: Gamepad2, x: '8%', y: '18%', size: 34, delay: 0, duration: 9 },
-  { Icon: Sparkles, x: '88%', y: '14%', size: 26, delay: 0.6, duration: 11 },
-  { Icon: Star, x: '80%', y: '62%', size: 22, delay: 1.2, duration: 8 },
-  { Icon: Puzzle, x: '5%', y: '68%', size: 30, delay: 1.8, duration: 10 },
-  { Icon: Rocket, x: '50%', y: '8%', size: 24, delay: 0.3, duration: 12 },
-]
+  { Icon: Gamepad2, x: "8%", y: "18%", size: 34, delay: 0, duration: 9 },
+  { Icon: Sparkles, x: "88%", y: "14%", size: 26, delay: 0.6, duration: 11 },
+  { Icon: Star, x: "80%", y: "62%", size: 22, delay: 1.2, duration: 8 },
+  { Icon: Puzzle, x: "5%", y: "68%", size: 30, delay: 1.8, duration: 10 },
+  { Icon: Rocket, x: "50%", y: "8%", size: 24, delay: 0.3, duration: 12 },
+];
 
 const STATS = [
-  { label: 'Games Published', value: '2+' },
-  { label: 'Total Downloads', value: '1.5M+' },
-  { label: 'Average Rating', value: '4.6★' },
-]
+  { label: "Games Published", value: "2" },
+  { label: "Total Downloads", value: "1K+" },
+  // { label: 'Average Rating', value: '4.6★' },
+];
 
 const Hero = () => {
   return (
@@ -24,14 +24,22 @@ const Hero = () => {
       <div className="pointer-events-none absolute -right-24 bottom-0 h-[22rem] w-[22rem] animate-blob rounded-full bg-brand-orange/15 blur-[100px] [animation-direction:alternate-reverse]" />
 
       {/* Floating icons */}
-      <div className="pointer-events-none absolute inset-0 hidden sm:block" aria-hidden="true">
+      <div
+        className="pointer-events-none absolute inset-0 hidden sm:block"
+        aria-hidden="true"
+      >
         {FLOATERS.map(({ Icon, x, y, size, delay, duration }, i) => (
           <motion.div
             key={i}
             className="absolute text-brand-blue-soft/30"
             style={{ left: x, top: y }}
             animate={{ y: [0, -16, 0], rotate: [0, 6, 0] }}
-            transition={{ duration, delay, repeat: Infinity, ease: 'easeInOut' }}
+            transition={{
+              duration,
+              delay,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
           >
             <Icon size={size} />
           </motion.div>
@@ -83,7 +91,10 @@ const Hero = () => {
             href="#games"
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-blue via-brand-violet to-brand-orange px-7 py-3.5 text-sm font-bold text-white shadow-glow transition-transform duration-300 hover:scale-105"
           >
-            <Gamepad2 size={18} className="transition-transform group-hover:rotate-12" />
+            <Gamepad2
+              size={18}
+              className="transition-transform group-hover:rotate-12"
+            />
             Explore Our Games
           </a>
           <a
@@ -131,7 +142,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -92,7 +92,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                 Follow Us
               </h4>
@@ -110,7 +110,7 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

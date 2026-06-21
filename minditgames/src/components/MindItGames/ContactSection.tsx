@@ -29,7 +29,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="-mt-4 grid gap-0 overflow-hidden rounded-3xl border border-brand-border bg-brand-surface/70 lg:grid-cols-1 w-[75%] mx-auto"
+          className="-mt-4 grid gap-0 overflow-hidden text-center sm:text-left rounded-3xl border border-brand-border bg-brand-surface/70 lg:grid-cols-1 w-full sm:w-[75%] mx-auto"
         >
           {/* Side panel */}
           <div className="relative flex flex-col justify-between bg-gradient-to-br from-brand-blue/15 via-brand-violet/10 to-brand-orange/10 p-8 lg:col-span-2 lg:p-10">
@@ -37,7 +37,7 @@ const ContactSection = () => {
               <h3 className="font-display text-xl font-bold text-white">
                 Reach out directly
               </h3>
-              <p className="mt-2 text-sm text-slate-400">
+              <p className="mt-2 text-sm text-slate-400 text-wrap">
                 We typically respond within 2–3 business days.
               </p>
             </div>

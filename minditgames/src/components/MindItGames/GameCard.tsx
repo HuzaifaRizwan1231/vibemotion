@@ -149,25 +149,27 @@ const GameCard = ({ game, reverse = false }: GameCardProps) => {
               >
                 {game.category}
               </span>
-              <div className="mt-1 flex items-center gap-1.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    size={13}
-                    className={
-                      i < Math.round(game.rating)
-                        ? "fill-yellow-400 text-yellow-400"
-                        : "fill-slate-700 text-slate-700"
-                    }
-                  />
-                ))}
-                <span className="ml-1 text-xs font-semibold text-slate-300">
-                  {game.rating}
-                </span>
-                <span className="text-xs text-slate-500">
-                  ({game.ratingCount})
-                </span>
-              </div>
+              {game.rating && (
+                <div className="mt-1 flex items-center gap-1.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star
+                      key={i}
+                      size={13}
+                      className={
+                        i < Math.round(game.rating ?? 0)
+                          ? "fill-yellow-400 text-yellow-400"
+                          : "fill-slate-700 text-slate-700"
+                      }
+                    />
+                  ))}
+                  <span className="ml-1 text-xs font-semibold text-slate-300">
+                    {game.rating}
+                  </span>
+                  <span className="text-xs text-slate-500">
+                    ({game.ratingCount})
+                  </span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -205,10 +207,12 @@ const GameCard = ({ game, reverse = false }: GameCardProps) => {
           </ul>
 
           {/* Downloads */}
-          <div className="mt-6 flex items-center gap-2 text-xs text-slate-500">
-            <Download size={14} />
-            {game.downloads} downloads
-          </div>
+          {game.downloads && (
+            <div className="mt-6 flex items-center gap-2 text-xs text-slate-500">
+              <Download size={14} />
+              {game.downloads} downloads
+            </div>
+          )}
 
           {/* CTAs */}
           <div className="mt-6 flex flex-wrap gap-3">
