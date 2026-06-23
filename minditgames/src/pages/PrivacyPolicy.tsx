@@ -92,7 +92,7 @@ const SECTIONS = [
     - We serve only child-appropriate, non-personalized advertisements
     - We do not include social features, external links, or in-app purchases targeting children
 
-    Parents and guardians may contact us at fassijutt@gmail.com to request
+    Parents and guardians may contact us at info.vibemotionltd@gmail.com to request
     information about data collected or to request deletion of any data.`,
   },
   {
@@ -103,7 +103,7 @@ const SECTIONS = [
     Crash and diagnostic data is retained for up to 90 days. Advertising identifiers are handled
     according to our ad partners' own retention policies.
 
-    You may request deletion of your data by contacting us at fassijutt@gmail.com.
+    You may request deletion of your data by contacting us at info.vibemotionltd@gmail.com.
     Please include your device's advertising ID (if available) to help us locate associated data.
     We will respond to deletion requests within 30 days.`,
   },
@@ -127,7 +127,7 @@ const SECTIONS = [
     data practices, please contact us:
 
     MindIt Games
-    Email: fassijutt@gmail.com
+    Email: info.vibemotionltd@gmail.com
 
     We aim to respond to all privacy-related inquiries within 5 business days.`,
   },

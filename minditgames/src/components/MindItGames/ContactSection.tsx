@@ -43,11 +43,11 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="mailto:fassijutt@gmail.com"
+              href="mailto:info.vibemotionltd@gmail.com"
               className="mt-8 inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-brand-blue-soft transition-colors hover:bg-white/10"
             >
               <Mail size={18} />
-              fassijutt@gmail.com
+              info.vibemotionltd@gmail.com
             </a>
           </div>
 
