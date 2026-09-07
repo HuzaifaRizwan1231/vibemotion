@@ -50,7 +50,10 @@ const Navbar = () => {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link to="/" className="group flex items-center gap-3">
+        <Link
+          to="https://vibemotion.co.uk/minditgames/"
+          className="group flex items-center gap-3"
+        >
           <span className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-blue via-brand-violet to-brand-orange shadow-glow transition-transform duration-300 group-hover:scale-105">
             <Brain size={22} className="text-white" strokeWidth={2.25} />
           </span>
