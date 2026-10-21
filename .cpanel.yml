@@ -12,7 +12,8 @@ deployment:
 
     - echo "Deploying vibemotion to public_html..."
     - export DEPLOYPATH=/home/vibecekf/public_html
-    - /bin/rm -rf $DEPLOYPATH/*
+    - find $DEPLOYPATH -type f ! -name ".htaccess" ! -path "*/.well-known/*" ! -path "*/cgi-bin/*" -delete
+    - find $DEPLOYPATH -mindepth 1 -type d -empty ! -name ".well-known" ! -name "cgi-bin" -delete
     - /bin/cp -r /home/vibecekf/repositories/vibemotion/dist/* $DEPLOYPATH
 
     - echo "------- vibemotion.co.uk/minditgames ----------"
