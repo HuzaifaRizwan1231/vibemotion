@@ -1107,16 +1107,29 @@ zoomd.com,88478941,RESELLER
 
 #CBigo
 bigo.sg,nuguuhmo0a,DIRECT
-pubmatic.com, 162588, RESELLER, 5d62403b186f2ace
-rubiconproject.com, 25064, RESELLER, 0bfd66d529a55807
-criteo.com, B-057955, RESELLER, 9fac4a4a87c2a44f
-smartclip.net, 13564, RESELLER
-App-stock.com,358747,RESELLER
-serpensx.com, SRP25C70034, RESELLER
-rubiconproject.com, 26584, RESELLER, 0bfd66d529a55807
-metup.it, AJxF6R108a9M6CaTvK, RESELLER
-pubmatic.com, 168506, RESELLER, 5d62403b186f2ace
-sharethrough.com, 1247, RESELLER, d53b998a7bd4ecd2
+media.net, 8CA5W5AK6, Reseller
+onlinemediasolutions.com,20522,RESELLER,b3868b187e4b6402
+pubnative.net,1006936,RESELLER,d641df8625486a7b
+smaato.com,1100060431,RESELLER,07bcf65f187117b4
+adview.com,10495868,RESELLER,1b2cc038a11ea319
+trustedstack.com,TSOZ5BM3O,RESELLER
+programmaticx.ai, 6000123, RESELLER, b42d42eb28400efa
+pubnative.net, 1018312, RESELLER, d641df8625486a7b
+smartadserver.com,3797,RESELLER
+conversantmedia.com,100081,RESELLER,03113cd04947736d
+sharethrough.com,3797,RESELLER,d53b998a7bd4ecd2
+spinx.biz, 1373698940, RESELLER
+openx.com,540326226,RESELLER,6a698e2ec38604c6
+brightcom.com,20522,RESELLER
+insticator.com,1ce4cf56-64ad-49f5-a5df-160922a988db,RESELLER,b3511ffcafb23a32
+outbrain.com, 00c3f2f972dd2225bfaa95a9838a0aed64, RESELLER
+e-planning.net,6180126a4324a5d2,RESELLER,c1ba615865ed87b2
+oko.uk,1ce4cf56-64ad-49f5-a5df-160922a988db,RESELLER,b3511ffcafb23a32
+vdo.ai, 5995, RESELLER
+152media.info,152M1093, RESELLER
+app-stock.com, 731135, RESELLER
+beapup.com, 583299, RESELLER
+clistltd.com, 431132, RESELLER
 bigo.sg,nuguuhmo0a,DIRECT
 adingenious.com, 70392, RESELLER
 start.io, 115550145, RESELLER
@@ -1289,6 +1302,7 @@ betweendigital.com, 43713, RESELLER
 rubiconproject.com, 26184, RESELLER, 0bfd66d529a55807
 improvedigital.com, 2525, RESELLER
 pubmatic.com,161332,RESELLER,5d62403b186f2ace
+pubmatic.com, 162588, RESELLER, 5d62403b186f2ace
 Media.net, 8CU9B72O6, RESELLER
 video.unrulymedia.com,5336134699710583737,RESELLER
 themediagrid.com, B8N9YH, RESELLER, 35d5010d7789b49d
@@ -1481,6 +1495,7 @@ smaato.com,1100059476,RESELLER,07bcf65f187117b4
 rubiconproject.com,24930,RESELLER,0bfd66d529a55807
 33across.com, 001Pg00001BT7yYIAT, RESELLER, bbea06d9c4d2853c
 cgnl.io, 7001, RESELLER
+rubiconproject.com, 25064, RESELLER, 0bfd66d529a55807
 conversantmedia.com, 101216, RESELLER, 03113cd04947736d
 pubmatic.com, 163476, RESELLER, 5d62403b186f2ace
 toponad.com,16569723d4bfa4, RESELLER, 1d49fe424a1a456d
@@ -1494,6 +1509,7 @@ pubmatic.com, 95054, RESELLER, 5d62403b186f2ace
 media.net, 8CUSC3UJ7, RESELLER
 onetag.com, 5649f68000b2f63, RESELLER
 imds.tv, 82655, RESELLER, ae6c32151e71f19d
+criteo.com, B-057955, RESELLER, 9fac4a4a87c2a44f
 yandex.com, 63904735, RESELLER
 ucfunnel.com, par-47BDB68D72764E2AFED767ED47DEDDA4, RESELLER
 adform.com, 3164, RESELLER
@@ -1651,6 +1667,7 @@ onlinemediasolutions.com,43235,RESELLER,b3868b187e4b6402
 lijit.com, 584539, RESELLER, fafdf38b16bf6b2b
 gitberry.com, 615100015, RESELLER
 pubmatic.com, 161151, RESELLER, 5d62403b186f2ace
+smartclip.net, 13564, RESELLER
 rubiconproject.com, 26250, RESELLER, 0bfd66d529a55807
 richaudience.com,pWFKmkEBfb,RESELLER
 cgnl.io, 6185, RESELLER
@@ -1745,6 +1762,7 @@ pubmatic.com, 160989, RESELLER, 5d62403b186f2ace
 yieldmo.com, 2807970144171533194, RESELLER
 pubmatic.com, 159382, RESELLER
 kidoz.net,15467,RESELLER,a109366414b7335e
+App-stock.com,358747,RESELLER
 improvedigital.com, 1805, RESELLER
 152media.info,152M1121,RESELLER
 theappspark.com, 38135, RESELLER
@@ -1759,3 +1777,11 @@ pubmatic.com, 163754, RESELLER, 5d62403b186f2ace
 smartadserver.com, 4721-OB, RESELLER, 060d053dcf45cbf3
 mobupps.com, c74d97b01eae257e44aa9d5bade97baf5001, RESELLER
 themediagrid.com,IRK975,RESELLER,35d5010d7789b49d
+serpensx.com, SRP25C70034, RESELLER
+rubiconproject.com, 26584, RESELLER, 0bfd66d529a55807
+metup.it, AJxF6R108a9M6CaTvK, RESELLER
+pubmatic.com, 168506, RESELLER, 5d62403b186f2ace
+sharethrough.com, 1247, RESELLER, d53b998a7bd4ecd2
+pubmatic.com,156835,RESELLER,5d62403b186f2ace
+smaato.com, 1100057628, RESELLER, 07bcf65f187117b4
+pubmatic.com, 165329, RESELLER, 5d62403b186f2ace
